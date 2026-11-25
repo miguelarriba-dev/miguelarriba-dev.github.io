@@ -122,6 +122,11 @@ section{padding-block:72px;border-top:1px solid var(--line)}
 .figcap{font-size:var(--step--1);color:var(--muted);margin-top:8px;text-align:center}
 .game{width:100%;max-width:520px;aspect-ratio:19.5/9;border:6px solid var(--frame);border-radius:34px;overflow:hidden;background:#47B8E8;margin:0 auto}
 .game canvas{display:block;width:100%;height:100%}
+.game img{display:block;width:100%;height:100%;object-fit:cover}
+.land{display:flex;flex-direction:column;gap:14px;align-items:center}
+.land .game{background:#F5E3C0}
+.land-row{display:grid;grid-template-columns:1fr 1fr;gap:14px;width:100%;max-width:520px}
+.land-row .game{border-width:4px;border-radius:20px}
 .visual{display:flex;flex-direction:column;justify-content:center;min-width:0}
 @media (max-width:860px){
   .project{grid-template-columns:minmax(0,1fr);gap:28px}
@@ -190,15 +195,15 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
     <div>
       <p class="eyebrow">Desarrollador móvil · iOS y Android</p>
       <h1>Miguel Ángel de Arriba</h1>
-      <p class="lead">Diseño, programo y publico apps nativas en Swift y Kotlin, desde la primera idea hasta la ficha de la tienda. Más de 20 años programando y administrando sistemas, y cinco apps propias, dos de ellas ya en la App Store.</p>
+      <p class="lead">Diseño, programo y publico apps nativas en Swift y Kotlin, desde la primera idea hasta la ficha de la tienda. Más de 20 años programando y administrando sistemas, y seis apps propias, tres de ellas ya en la App Store.</p>
       <div class="btns">
         <a class="btn primary" href="#proyectos">Ver proyectos</a>
         <a class="btn" href="cv.pdf"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M8 2v8m0 0 3-3m-3 3L5 7M3 13h10"/></svg>Descargar CV</a>
         <a class="btn" href="https://github.com/wattboard"><svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>GitHub</a>
       </div>
       <div class="facts">
-        <div><b>5</b><span>apps propias, de la idea a la tienda</span></div>
-        <div><b>2</b><span>publicadas en la App Store</span></div>
+        <div><b>6</b><span>apps propias, de la idea a la tienda</span></div>
+        <div><b>3</b><span>publicadas en la App Store</span></div>
         <div><b>74.000</b><span>líneas de Swift y Kotlin</span></div>
         <div><b>900+</b><span>tests automatizados</span></div>
       </div>
@@ -404,6 +409,47 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
       <div class="visual">
         <div class="game"><canvas id="zipwing-canvas" aria-label="Animación ilustrativa del juego: un pájaro se balancea colgado de una cuerda entre tuberías"></canvas></div>
         <p class="figcap">Animación ilustrativa con la paleta del juego.</p>
+      </div>
+    </article>
+
+    <!-- Tosti -->
+    <article class="project rev" id="tosti">
+      <div class="copy">
+        <div class="p-head">
+          <img src="assets/tosti-icon.png" alt="Icono de Tosti" style="image-rendering:pixelated">
+          <div><h3>Tosti: ¡Ni de broma!</h3><p class="tag">Plataformas de trampas que se aprenden muriendo</p></div>
+        </div>
+        <div class="status">
+          <span class="pill ok">App Store · iPhone</span>
+          <span class="pill">Godot 4</span>
+          <span class="pill">Demo web</span>
+        </div>
+        <p class="what">Tosti es una tostada que cruza niveles llenos de trampas absurdas, mientras El Narrador, una nube sarcástica, le da pistas que a veces son verdad y a veces no. Cinco mundos de diez niveles hechos a mano y un nivel final tan largo como todo el juego junto.</p>
+        <dl>
+          <div><dt>Qué hice</dt><dd>El juego completo en Godot 4: diseño de los 50 niveles, controles táctiles ajustables, estrellas y aspectos para Tosti, anuncios con consentimiento RGPD, compra única para quitarlos y textos en español e inglés. La misma base se exporta a WebAssembly como demo jugable en el navegador.</dd></div>
+          <div><dt>Reto técnico</dt><dd>
+            <ul>
+              <li>Trampas que cambian al morir: en muchos niveles cambia la que te mató, o todas, y cada una deja una pequeña pista.</li>
+              <li>Estadísticas anónimas de en qué trampa muere la gente y cuánto tarda cada nivel, para ajustar la dificultad con datos.</li>
+              <li>Ayuda opcional tras varias muertes: un anuncio recompensado para volver al checkpoint o saltar el nivel.</li>
+            </ul>
+          </dd></div>
+          <div><dt>Tecnologías</dt><dd class="stack"><span>Godot 4</span><span>WebAssembly</span><span>AdMob</span><span>UMP</span><span>GameAnalytics</span><span>Compras integradas</span></dd></div>
+        </dl>
+        <div class="btns">
+          <a class="btn primary" href="https://apps.apple.com/es/app/tosti-ni-de-broma/id6837702095">App Store</a>
+          <a class="btn" href="https://wattboard.github.io/tosti-web/play/">Jugar la demo</a>
+        </div>
+      </div>
+      <div class="visual">
+        <div class="land">
+          <div class="game"><img src="assets/tosti-2.jpg" alt="Primer nivel: El Narrador dice «Hola, pan. Camina a la derecha. Hasta tú puedes.»" loading="lazy"></div>
+          <div class="land-row">
+            <div class="game"><img src="assets/tosti-3.jpg" alt="Tosti muere en unos pinchos y El Narrador comenta «Tostada pinchada. Un clásico.»" loading="lazy"></div>
+            <div class="game"><img src="assets/tosti-1.jpg" alt="Mapa con los mundos Cocina, Oficina, Nubes, Congelador, Horno y Final" loading="lazy"></div>
+          </div>
+        </div>
+        <p class="figcap">Capturas de la demo web.</p>
       </div>
     </article>
   </div>
