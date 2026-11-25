@@ -187,15 +187,15 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
     <div>
       <p class="eyebrow">Desarrollador móvil · iOS y Android</p>
       <h1>Miguel Ángel de Arriba</h1>
-      <p class="lead">Diseño, programo y publico apps nativas en Swift y Kotlin, desde la primera idea hasta la ficha de la tienda. Más de 20 años programando y administrando sistemas, y seis apps propias, tres de ellas ya en la App Store.</p>
+      <p class="lead">Diseño, programo y publico apps nativas en Swift y Kotlin, desde la primera idea hasta la ficha de la tienda. Más de 20 años programando y administrando sistemas, y nueve apps propias, seis de ellas ya en la App Store.</p>
       <div class="btns">
         <a class="btn primary" href="#proyectos">Ver proyectos</a>
         <a class="btn" href="cv.pdf"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M8 2v8m0 0 3-3m-3 3L5 7M3 13h10"/></svg>Descargar CV</a>
         <a class="btn" href="https://github.com/wattboard"><svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>GitHub</a>
       </div>
       <div class="facts">
-        <div><b>6</b><span>apps propias, de la idea a la tienda</span></div>
-        <div><b>3</b><span>publicadas en la App Store</span></div>
+        <div><b>9</b><span>apps propias, de la idea a la tienda</span></div>
+        <div><b>6</b><span>publicadas en la App Store</span></div>
         <div><b>74.000</b><span>líneas de Swift y Kotlin</span></div>
         <div><b>900+</b><span>tests automatizados</span></div>
       </div>
@@ -444,6 +444,118 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
         <p class="figcap">Capturas de la demo web.</p>
       </div>
     </article>
+
+    <!-- Pulselane -->
+    <article class="project" id="pulselane">
+      <div class="copy">
+        <div class="p-head">
+          <img src="assets/pulselane-icon.png" alt="Icono de Pulselane">
+          <div><h3>Pulselane</h3><p class="tag">Juego de ritmo de un dedo</p></div>
+        </div>
+        <div class="status">
+          <span class="pill ok">App Store · iPhone</span>
+          <span class="pill">Godot 4</span>
+          <span class="pill">Game Center</span>
+        </div>
+        <p class="what">Toca a la izquierda o a la derecha para cambiar de carril y esquivar los bloques, que caen al ritmo de la canción. Doce canciones en dos actos con tres dificultades, canción diaria con racha y un modo infinito.</p>
+        <dl>
+          <div><dt>Qué hice</dt><dd>El juego completo en Godot 4 con GDScript: niveles musicales, estrellas que desbloquean temas, bolas y estelas, objetivos, marcadores y logros en Game Center, anuncios con consentimiento RGPD y una compra Premium con StoreKit 2. Textos en español e inglés.</dd></div>
+          <div><dt>Reto técnico</dt><dd>
+            <ul>
+              <li>Todo el apartado visual y el sonido se generan por código, con shaders y audio sintetizado al arrancar: no hay recursos de terceros ni licencias.</li>
+              <li>Un bot juega partidas sin pantalla para comprobar que cada fila tiene salida y que el juego es justo.</li>
+              <li>Respondí a un rechazo de App Review (4.3) con un modo nuevo de niveles musicales y la app se aprobó.</li>
+            </ul>
+          </dd></div>
+          <div><dt>Tecnologías</dt><dd class="stack"><span>Godot 4</span><span>GDScript</span><span>Shaders</span><span>GameKit</span><span>StoreKit 2</span><span>AdMob</span><span>UMP</span></dd></div>
+        </dl>
+        <div class="btns">
+          <a class="btn primary" href="https://apps.apple.com/es/app/pulselane/id6827203176">App Store</a>
+          <a class="btn" href="https://wattboard.github.io/pulselane-web/">Web</a>
+        </div>
+      </div>
+      <div class="visual">
+        <div class="shots">
+          <div class="phone"><img src="assets/pulselane-1.jpg" alt="Selección de niveles: cada nivel es una canción, con tres dificultades" loading="lazy"></div>
+          <div class="phone"><img src="assets/pulselane-2.jpg" alt="Nivel «Noche de neón»: la bola esquiva bloques y suma un «¡por poco!»" loading="lazy"></div>
+          <div class="phone"><img src="assets/pulselane-3.jpg" alt="Menú principal con niveles, canción diaria y modo infinito" loading="lazy"></div>
+        </div>
+      </div>
+    </article>
+
+    <!-- Orbita Tap -->
+    <article class="project rev" id="orbita">
+      <div class="copy">
+        <div class="p-head">
+          <img src="assets/orbita-icon.png" alt="Icono de Orbita Tap">
+          <div><h3>Orbita Tap</h3><p class="tag">Juego de un toque alrededor de un anillo</p></div>
+        </div>
+        <div class="status">
+          <span class="pill ok">App Store · iPhone</span>
+          <span class="pill">SpriteKit</span>
+          <span class="pill">Game Center</span>
+        </div>
+        <p class="what">Una bola gira por un anillo y cada toque invierte el sentido. Hay que recoger los puntos y esquivar los pinchos, que aparecen, parpadean y se mueven a medida que sube la puntuación.</p>
+        <dl>
+          <div><dt>Qué hice</dt><dd>El juego completo en Swift con SpriteKit y SwiftUI: dificultad por tramos, vibración, marcador en Game Center, anuncios con consentimiento RGPD y aviso de seguimiento de Apple, y una compra única con StoreKit 2 para quitarlos.</dd></div>
+          <div><dt>Reto técnico</dt><dd>
+            <ul>
+              <li>Muerte justa: un pincho nuevo nunca aparece a menos de 60° de la bola (más cuanto más rápido va) y el punto siempre sale en un tramo alcanzable.</li>
+              <li>Comprobación de la compra contra Apple para que no se pueda saltar el pago de quitar anuncios.</li>
+            </ul>
+          </dd></div>
+          <div><dt>Tecnologías</dt><dd class="stack"><span>Swift</span><span>SpriteKit</span><span>SwiftUI</span><span>GameKit</span><span>StoreKit 2</span><span>AdMob</span><span>UMP</span></dd></div>
+        </dl>
+        <div class="btns">
+          <a class="btn primary" href="https://apps.apple.com/es/app/orbita-tap/id6827141699">App Store</a>
+          <a class="btn" href="https://wattboard.github.io/orbita-web/">Web</a>
+        </div>
+      </div>
+      <div class="visual">
+        <div class="shots">
+          <div class="phone"><img src="assets/orbita-1.jpg" alt="Partida en curso: la bola gira por el anillo con 17 puntos" loading="lazy"></div>
+          <div class="phone"><img src="assets/orbita-2.jpg" alt="Fin de partida: «Te faltaron 4 para batir el récord»" loading="lazy"></div>
+          <div class="phone"><img src="assets/orbita-3.jpg" alt="Partida rápida con 36 puntos y más pinchos" loading="lazy"></div>
+        </div>
+      </div>
+    </article>
+
+    <!-- Bloqueo 400 -->
+    <article class="project" id="bloqueo-400">
+      <div class="copy">
+        <div class="p-head">
+          <img src="assets/bloqueo400-icon.png" alt="Icono de Bloqueo 400">
+          <div><h3>Bloqueo 400</h3><p class="tag">Identifica o bloquea las llamadas comerciales del prefijo 400</p></div>
+        </div>
+        <div class="status">
+          <span class="pill ok">App Store · iPhone</span>
+          <span class="pill">CallKit</span>
+          <span class="pill">0 datos recogidos</span>
+        </div>
+        <p class="what">Desde el 17 de octubre de 2026 las llamadas comerciales en España salen de números que empiezan por 400. La app las marca como «Comercial (400)» gratis y, con un pago único, hace que no suenen, con excepciones para los 400 que sí quieres recibir.</p>
+        <dl>
+          <div><dt>Qué hice</dt><dd>Toda la app en Swift y SwiftUI con una extensión de CallKit (Call Directory), pantalla de estado, modos Identificar y Bloquear, lista de excepciones, ayuda y pago único con StoreKit 2. Sin anuncios, sin cuentas y sin servidor. Tests con Swift Testing.</dd></div>
+          <div><dt>Reto técnico</dt><dd>
+            <ul>
+              <li>Carga en iOS el rango completo de un millón de números 400 en unos dos segundos, con las excepciones del usuario fuera del bloqueo.</li>
+              <li>Respondí a un rechazo de App Review (4.3 y 4.2.6) explicando el problema que resuelve y la app se aprobó.</li>
+            </ul>
+          </dd></div>
+          <div><dt>Tecnologías</dt><dd class="stack"><span>Swift</span><span>SwiftUI</span><span>CallKit</span><span>StoreKit 2</span><span>Swift Testing</span><span>XcodeGen</span></dd></div>
+        </dl>
+        <div class="btns">
+          <a class="btn primary" href="https://apps.apple.com/es/app/bloqueo-400-llamadas-spam/id6825985975">App Store</a>
+          <a class="btn" href="https://wattboard.github.io/bloqueo-400-web/">Web</a>
+        </div>
+      </div>
+      <div class="visual">
+        <div class="shots flat">
+          <div class="phone"><img src="assets/bloqueo400-1.jpg" alt="Estado: extensión activada y llamadas 400 filtradas" loading="lazy"></div>
+          <div class="phone"><img src="assets/bloqueo400-2.jpg" alt="Modos: gratis para identificar, pago único para bloquear" loading="lazy"></div>
+          <div class="phone"><img src="assets/bloqueo400-3.jpg" alt="Desbloqueo completo: pago único, sin suscripción" loading="lazy"></div>
+        </div>
+      </div>
+    </article>
   </div>
 </section>
 
@@ -456,7 +568,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
     </div>
     <div class="skills">
       <div><h3>iOS</h3><ul>
-        <li>Swift 6 y concurrencia estricta</li><li>SwiftUI, UIKit</li><li>SwiftData, Observation</li><li>WidgetKit, Live Activities</li><li>watchOS y macOS</li><li>App Intents y Siri</li><li>Core Bluetooth, MapKit, Swift Charts</li><li>Foundation Models (IA local)</li><li>SpriteKit, GameKit</li>
+        <li>Swift 6 y concurrencia estricta</li><li>SwiftUI, UIKit</li><li>SwiftData, Observation</li><li>WidgetKit, Live Activities</li><li>watchOS y macOS</li><li>App Intents y Siri</li><li>Core Bluetooth, MapKit, Swift Charts</li><li>Foundation Models (IA local)</li><li>SpriteKit, GameKit, CallKit</li>
       </ul></div>
       <div><h3>Android</h3><ul>
         <li>Kotlin y corrutinas</li><li>Jetpack Compose, Material 3</li><li>Glance (widgets)</li><li>DataStore, WorkManager</li><li>Bluetooth LE</li><li>Biometría y Keystore</li><li>R8 y Play Integrity</li>
@@ -465,7 +577,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
         <li>StoreKit 2 y Google Play Billing</li><li>Suscripciones, pago único y pruebas</li><li>AdMob con consentimiento RGPD</li><li>TestFlight y pruebas cerradas</li><li>App Review y políticas de Google Play</li><li>Fichas y capturas en 7 idiomas</li><li>Privacidad por diseño</li>
       </ul></div>
       <div><h3>Herramientas</h3><ul>
-        <li>Git y GitHub</li><li>XCTest, Swift Testing, JUnit</li><li>XcodeGen, Gradle</li><li>APIs de App Store Connect y Google Play</li><li>Scripts en Python para automatizar publicaciones</li><li>Go, TypeScript, Cloudflare Workers</li><li>GitHub Pages</li>
+        <li>Git y GitHub</li><li>XCTest, Swift Testing, JUnit</li><li>XcodeGen, Gradle</li><li>APIs de App Store Connect y Google Play</li><li>Scripts en Python para automatizar publicaciones</li><li>Godot 4 y GDScript (juegos)</li><li>Go, TypeScript, Cloudflare Workers</li><li>GitHub Pages</li>
       </ul></div>
     </div>
   </div>
